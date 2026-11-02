@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Alkindo Mitraraya - High Quality Industrial Resin</title>
+  
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-purple: #3c2a63;
+      --accent-blue: #0d6efd;
+      --accent-green: #198754;
+      --light-bg: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+      background-color: #fff;
+    }
+
+    /* Top Strip Rainbow Accent */
+    .top-bar-accent {
+      height: 4px;
+      background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+      width: 100%;
+    }
+
+    /* Header Navigasi Utama */
+    .navbar-propan {
+      background-color: var(--primary-purple);
+      padding: 12px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-propan .navbar-brand {
+      color: #fff;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-propan .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 8px 16px !important;
+      transition: color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .navbar-propan .nav-link:hover {
+      color: #ffd166 !important;
+    }
+
+    /* Hero Banner Utama */
+    .hero-section {
+      background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                  url('assets/img/hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 90px 0;
+      position: relative;
+    }
+
+    /* Badge Prediksi Modern */
+    .badge-predict {
+      background: rgba(13, 110, 253, 0.25);
+      border: 1px solid rgba(13, 110, 253, 0.5);
+      color: #60a5fa;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+    }
+
+    .badge-predict:hover {
+      background: rgba(13, 110, 253, 0.4);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Frame Pemutar Video YouTube */
+    .yt-preview-box {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      border: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* SEKSI SEJARAH */
+    .about-story-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid #f1f5f9;
+    }
+
+    .badge-story {
+      background-color: #ffe5e5;
+      color: #e63946;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .story-img-frame {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      background: #3c2a63;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+    }
+
+    /* KATALOG PRODUK ANIMASI INTERAKTIF */
+    .product-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+      border-color: var(--accent-blue);
+    }
+
+    .product-img-box {
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #f8fafc 0%, #edf2f7 100%);
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    .product-thumb-img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+    }
+
+    .product-card:hover .product-thumb-img {
+      transform: scale(1.08);
+    }
+
+    /* MANAJEMEN MODERN & DINAMIS */
+    .management-card-modern {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #f1f5f9;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .management-card-modern::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary-purple), var(--accent-blue));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .management-card-modern:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 35px rgba(60, 42, 99, 0.12);
+    }
+
+    .management-card-modern:hover::before {
+      opacity: 1;
+    }
+
+    .avatar-wrapper {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+      border: 4px solid #fff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      color: var(--primary-purple);
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Accent Bar -->
+  <div class="top-bar-accent"></div>
+
+  <!-- Header Navigasi Utama -->
+  <nav class="navbar navbar-expand-lg navbar-propan">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="#">
+        <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="20" r="12" fill="#0d6efd"/>
+          <circle cx="20" cy="80" r="12" fill="#0d6efd"/>
+          <circle cx="80" cy="80" r="12" fill="#0d6efd"/>
+          <line x1="50" y1="20" x2="20" y2="80" stroke="#0d6efd" stroke-width="8"/>
+          <line x1="50" y1="20" x2="80" y2="80" stroke="#0d6efd" stroke-width="8"/>
+          <line x1="20" y1="80" x2="80" y2="80" stroke="#0d6efd" stroke-width="8"/>
+        </svg>
+        <span>ALKINDO MITRA RAYA</span>
+      </a>
+
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPropan">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarPropan">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sejarah">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#katalog">Katalog Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#manajemen">Manajemen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. Hero Section -->
+  <section id="beranda" class="hero-section">
+    <div class="container text-center text-lg-start">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          
+          <div class="mb-3">
+            <a href="#katalog" class="badge-predict text-decoration-none">
+              <i class="bi bi-cpu-fill fs-6"></i>
+              <span>Fitur Prediksi Resin & Rekomendasi Industri</span>
+              <i class="bi bi-arrow-right-short fs-5"></i>
+            </a>
+          </div>
+
+          <h1 class="display-4 fw-bold mb-3">Solusi Bahan Baku Resin Berkualitas Tinggi</h1>
+          <p class="lead mb-4 opacity-90">PT Alkindo Mitraraya menyuplai resin sintetis berkualitas tinggi untuk kebutuhan industri cat kayu, besi, otomotif, hingga pelapis lantai.</p>
+          
+          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center justify-content-lg-start mb-4">
+            <a href="#katalog" class="btn btn-warning btn-lg fw-bold rounded-pill px-4">
+              <i class="bi bi-search me-1"></i> Prediksi & Lihat Katalog
+            </a>
+            <a href="#kontak" class="btn btn-outline-light btn-lg rounded-pill px-4">Hubungi Kami</a>
+          </div>
+
+          <div class="pt-3 border-top border-secondary border-opacity-50 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+            <a href="#sejarah" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-journal-text me-1"></i> Sejarah</a>
+            <a href="#katalog" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-box-seam me-1"></i> Katalog</a>
+            <a href="#manajemen" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-people me-1"></i> Manajemen</a>
+            <a href="#lokasi" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-geo-alt me-1"></i> Lokasi</a>
+          </div>
+
+        </div>
+
+        <!-- Video YouTube Embed (Ukuran Kecil) -->
+        <div class="col-lg-5">
+          <div class="mx-auto" style="max-width: 380px;">
+            <div class="yt-preview-box rounded-3 overflow-hidden shadow">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/YC8MhUxlvas" 
+                  title="Profil PT Alkindo Mitraraya Video" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SEJARAH & GAMBARAN UMUM -->
+  <section id="sejarah" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Tentang Kami</h2>
+        <p class="text-muted">PT Alkindo Mitraraya</p>
+      </div>
+
+      <div class="about-story-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge-story"><i class="bi bi-bookmark-heart me-1"></i> Our Story</span>
+            <h3 class="fw-bold fs-2 text-dark mb-3">PT Alkindo Mitraraya: Perjalanan, Inovasi, dan Perkembangan</h3>
+            <p class="text-muted leading-relaxed">
+              PT Alkindo Mitraraya merupakan perusahaan yang perjalanan dan perkembangannya mencerminkan upaya dalam mengembangkan industri serta meningkatkan kualitas produksi. Berdasarkan referensi, perusahaan didirikan pada tahun 1989 dengan fokus memproduksi resin sintetis berkualitas tinggi untuk pelapis berbasis pelarut.
+            </p>
+            <p class="text-muted leading-relaxed mb-0">
+              Pada tahun 1993, perusahaan memperluas produksinya dengan menghadirkan resin larutan akrilik, kemudian meningkatkan kapasitas produksi resin alkyd hingga mencapai 5.400 MTPA pada akhir tahun 1995. Perkembangan tersebut menjadi bagian penting dalam perjalanan perusahaan untuk memenuhi kebutuhan pasar dan meningkatkan daya saing manufaktur kimia nasional.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="story-img-frame">
+              <svg width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-3">
+                <circle cx="50" cy="20" r="12" fill="#38bdf8"/>
+                <circle cx="20" cy="80" r="12" fill="#38bdf8"/>
+                <circle cx="80" cy="80" r="12" fill="#38bdf8"/>
+                <line x1="50" y1="20" x2="20" y2="80" stroke="#38bdf8" stroke-width="8"/>
+                <line x1="50" y1="20" x2="80" y2="80" stroke="#38bdf8" stroke-width="8"/>
+                <line x1="20" y1="80" x2="80" y2="80" stroke="#38bdf8" stroke-width="8"/>
+              </svg>
+              <h3 class="fw-bold mb-1">alkindo</h3>
+              <p class="small text-light opacity-75">High Performance Industrial Resin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. KATALOG PRODUK LENGKAP (LOKAL INPUT) -->
+  <section id="katalog" class="py-5">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+        <div>
+          <span class="text-primary fw-bold">KATALOG RESIN</span>
+          <h2 class="fw-bold mb-0">Produk Unggulan Kami</h2>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-outline-primary active" onclick="filterProd('all')">Semua</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterProd('solvent')">Solvent-Based</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterProd('water')">Water-Based</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+        
+        <!-- 1. Resin Alkid -->
+        <div class="col-md-6 col-lg-4 prod-card solvent">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/resin alkyd.jpeg" alt="Resin Alkid" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Resin Alkid (Alkyd Resin)</h5>
+              <p class="text-muted small">Bahan baku utama untuk formulasi cat kayu dan cat besi konvensional.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Resin Akrilik Larutan -->
+        <div class="col-md-6 col-lg-4 prod-card solvent">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/resin akrilik.jpeg" alt="Resin Akrilik Larutan" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Resin Akrilik Larutan</h5>
+              <p class="text-muted small">Daya tahan cuaca ekstrim serta retensi warna yang sangat kuat.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Resin Amino -->
+        <div class="col-md-6 col-lg-4 prod-card solvent">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/resin amino.jpeg" alt="Resin Amino" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Resin Amino (Amino Resin)</h5>
+              <p class="text-muted small">Bahan pengeras (curing agent) untuk aplikasi cat oven industri.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Resin Poliester -->
+        <div class="col-md-6 col-lg-4 prod-card solvent">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/resin poliester.jpeg" alt="Resin Poliester" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Resin Poliester</h5>
+              <p class="text-muted small">Bahan pelapis komersial industri otomotif dan koil baja.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Resin Epoksi -->
+        <div class="col-md-6 col-lg-4 prod-card solvent">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/resin epoxy.jpeg" alt="Resin Epoksi" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Resin Epoksi (Epoxy)</h5>
+              <p class="text-muted small">Pelapis lantai (floor coating) &amp; cat anti-korosi industri heavy duty.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Poliuretan Berbasis Air -->
+        <div class="col-md-6 col-lg-4 prod-card water">
+          <div class="product-card h-100 p-3">
+            <div class="product-img-box">
+              <img src="assets/img/ai" alt="Poliuretan Berbasis Air" class="product-thumb-img">
+            </div>
+            <div class="p-2">
+              <h5 class="fw-bold mt-2 mb-1">Poliuretan Berbasis Air</h5>
+              <p class="text-muted small">Formulasi ramah lingkungan berbasis air untuk pelapis berperforma tinggi.</p>
+              <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                <span class="badge bg-info-subtle text-info px-3 py-2 rounded-pill">Water-Based</span>
+                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MANAJEMEN LENGKAP -->
+  <section id="manajemen" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold">PROFIL KEPEMIMPINAN</span>
+        <h2 class="fw-bold mb-1">Jajaran Manajemen &amp; Eksekutif</h2>
+        <p class="text-muted">Mendorong inovasi dan operasional berkelanjutan perusahaan</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="management-card-modern text-center h-100">
+            <div class="avatar-wrapper">
+              <i class="bi bi-person-fill fs-1"></i>
+            </div>
+            <h5 class="fw-bold mb-1 text-dark">Direktur Utama</h5>
+            <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-1 rounded-pill">Presiden Direktur</span>
+            <p class="text-muted small mb-3">Memimpin ekspansi pasar, riset formulasi resin, dan arah strategis perusahaan.</p>
+            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="management-card-modern text-center h-100">
+            <div class="avatar-wrapper">
+              <i class="bi bi-person-fill fs-1"></i>
+            </div>
+            <h5 class="fw-bold mb-1 text-dark">Punggawa Keberlanjutan</h5>
+            <span class="badge bg-success-subtle text-success mb-3 px-3 py-1 rounded-pill">Chief Executive Officer</span>
+            <p class="text-muted small mb-3">Penanggung jawab utama Green Chemistry, keselamatan K3L, serta program CSR.</p>
+            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="management-card-modern text-center h-100">
+            <div class="avatar-wrapper">
+              <i class="bi bi-person-fill fs-1"></i>
+            </div>
+            <h5 class="fw-bold mb-1 text-dark">Manajer Produksi</h5>
+            <span class="badge bg-secondary-subtle text-secondary mb-3 px-3 py-1 rounded-pill">Operation Manager</span>
+            <p class="text-muted small mb-3">Mengelola standarisasi mutu resin, pengujian laboratorium, dan pabrikasi.</p>
+            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="management-card-modern text-center h-100">
+            <div class="avatar-wrapper">
+              <i class="bi bi-person-fill fs-1"></i>
+            </div>
+            <h5 class="fw-bold mb-1 text-dark">Manajer Keuangan</h5>
+            <span class="badge bg-secondary-subtle text-secondary mb-3 px-3 py-1 rounded-pill">Finance &amp; GA</span>
+            <p class="text-muted small mb-3">Mengatur tata kelola keuangan, kepatuhan regulasi, dan administrasi umum.</p>
+            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Lokasi & Google Maps -->
+  <section id="lokasi" class="py-5">
+    <div class="container py-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <span class="text-primary fw-bold">KANTOR &amp; PABRIK</span>
+          <h2 class="fw-bold mb-3">Lokasi Operasional</h2>
+          <p class="text-muted"><i class="bi bi-geo-alt-fill text-primary me-2"></i>PT. Alkindo Mitra Raya, Kabupaten Tangerang, Banten</p>
+          <p class="text-muted"><i class="bi bi-telephone-fill text-primary me-2"></i>+62 21 555-1234</p>
+          <p class="text-muted"><i class="bi bi-envelope-fill text-primary me-2"></i>info@alkindomitraraya.co.id</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="rounded-4 overflow-hidden border shadow-sm" style="height: 350px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4261967249095!2d106.56418297499032!3d-6.207379693780467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fef9ff4985fb%3A0x7183021f3c50f91f!2sPT.%20Alkindo%20Mitra%20Raya!5e0!3m2!1sid!2sid!4v1793350041641!5m2!1sid!2sid" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Formulir Kontak -->
+  <section id="kontak" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Hubungi Kami</h2>
+        <p class="text-muted">Kirimkan pertanyaan atau konsultasi spesifikasi produk resin yang Anda butuhkan.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form class="p-4 border rounded-4 bg-white shadow-sm">
+            <div class="mb-3">
+              <label class="form-label fw-medium">Nama Lengkap</label>
+              <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-medium">Email Perusahaan</label>
+              <input type="email" class="form-control" placeholder="nama@perusahaan.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-medium">Pesan</label>
+              <textarea class="form-control" rows="4" placeholder="Tuliskan detail kebutuhan Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/6285604501550" target="_blank" class="whatsapp-btn">
+    <i class="bi bi-whatsapp fs-4"></i> Chat WhatsApp
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="small text-secondary mb-0">Copyright © 2026 PT Alkindo Mitraraya. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function filterProd(cat) {
+      const buttons = document.querySelectorAll('.btn-group .btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.prod-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.classList.contains(cat)) {
+          card.style.display = 'block';
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            card.style.transition = 'all 0.4s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
