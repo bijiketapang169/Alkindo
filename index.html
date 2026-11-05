@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PT Alkindo Mitraraya - High Quality Industrial Resin</title>
   
+  <!-- Favicon Logo Alkindo (SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='18' r='12' fill='%230d6efd'/%3E%3Ccircle cx='18' cy='78' r='12' fill='%230d6efd'/%3E%3Ccircle cx='82' cy='78' r='12' fill='%230d6efd'/%3E%3Cline x1='50' y1='18' x2='18' y2='78' stroke='%230d6efd' stroke-width='9'/%3E%3Cline x1='50' y1='18' x2='82' y2='78' stroke='%230d6efd' stroke-width='9'/%3E%3Cline x1='18' y1='78' x2='82' y2='78' stroke='%230d6efd' stroke-width='9'/%3E%3Cline x1='50' y1='18' x2='50' y2='78' stroke='%230d6efd' stroke-width='9'/%3E%3C/svg%3E">
+
   <!-- Bootstrap 5 CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -103,7 +106,7 @@
       border: 3px solid rgba(255, 255, 255, 0.2);
     }
 
-    /* SEKSI SEJARAH */
+    /* SEKSI SEJARAH & VISI MISI */
     .about-story-card {
       background: #ffffff;
       border-radius: 20px;
@@ -137,6 +140,19 @@
       text-align: center;
       padding: 30px;
       position: relative;
+    }
+
+    .vm-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e2e8f0;
+      transition: transform 0.3s ease;
+    }
+
+    .vm-card:hover {
+      transform: translateY(-5px);
     }
 
     /* KATALOG PRODUK ANIMASI INTERAKTIF */
@@ -246,6 +262,83 @@
       color: white;
       transform: scale(1.05);
     }
+
+    /* FOOTER MODERN STYLE */
+    .footer-main-content {
+      background-color: #1e1e1e;
+      color: #cbd5e1;
+      padding: 50px 0 30px;
+    }
+
+    .footer-main-content h6 {
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a, .footer-links button {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .footer-links a:hover, .footer-links button:hover {
+      color: #ffffff;
+    }
+
+    .footer-help-box {
+      background-color: #0d6efd;
+      border-radius: 12px;
+      padding: 18px 22px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .footer-help-box:hover {
+      background-color: #0b5ed7;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .footer-help-box h5 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .footer-help-box p {
+      font-size: 0.82rem;
+      margin: 0;
+    }
+
+    .footer-bottom-bar {
+      background-color: #111827;
+      border-top: 1px solid #334155;
+      padding: 18px 0;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
   </style>
 </head>
 <body>
@@ -257,13 +350,15 @@
   <nav class="navbar navbar-expand-lg navbar-propan">
     <div class="container-fluid px-lg-5">
       <a class="navbar-brand" href="#">
+        <!-- Logo SVG Alkindo Mitraraya -->
         <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="20" r="12" fill="#0d6efd"/>
-          <circle cx="20" cy="80" r="12" fill="#0d6efd"/>
-          <circle cx="80" cy="80" r="12" fill="#0d6efd"/>
-          <line x1="50" y1="20" x2="20" y2="80" stroke="#0d6efd" stroke-width="8"/>
-          <line x1="50" y1="20" x2="80" y2="80" stroke="#0d6efd" stroke-width="8"/>
-          <line x1="20" y1="80" x2="80" y2="80" stroke="#0d6efd" stroke-width="8"/>
+          <circle cx="50" cy="18" r="12" fill="#0d6efd"/>
+          <circle cx="18" cy="78" r="12" fill="#0d6efd"/>
+          <circle cx="82" cy="78" r="12" fill="#0d6efd"/>
+          <line x1="50" y1="18" x2="18" y2="78" stroke="#0d6efd" stroke-width="9"/>
+          <line x1="50" y1="18" x2="82" y2="78" stroke="#0d6efd" stroke-width="9"/>
+          <line x1="18" y1="78" x2="82" y2="78" stroke="#0d6efd" stroke-width="9"/>
+          <line x1="50" y1="18" x2="50" y2="78" stroke="#0d6efd" stroke-width="9"/>
         </svg>
         <span>ALKINDO MITRA RAYA</span>
       </a>
@@ -302,23 +397,18 @@
           <h1 class="display-4 fw-bold mb-3">Solusi Bahan Baku Resin Berkualitas Tinggi</h1>
           <p class="lead mb-4 opacity-90">PT Alkindo Mitraraya menyuplai resin sintetis berkualitas tinggi untuk kebutuhan industri cat kayu, besi, otomotif, hingga pelapis lantai.</p>
           
-          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center justify-content-lg-start mb-4">
+          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center justify-content-lg-start">
             <a href="#katalog" class="btn btn-warning btn-lg fw-bold rounded-pill px-4">
               <i class="bi bi-search me-1"></i> Prediksi & Lihat Katalog
             </a>
-            <a href="#kontak" class="btn btn-outline-light btn-lg rounded-pill px-4">Hubungi Kami</a>
-          </div>
-
-          <div class="pt-3 border-top border-secondary border-opacity-50 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-            <a href="#sejarah" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-journal-text me-1"></i> Sejarah</a>
-            <a href="#katalog" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-box-seam me-1"></i> Katalog</a>
-            <a href="#manajemen" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-people me-1"></i> Manajemen</a>
-            <a href="#lokasi" class="btn btn-sm btn-dark bg-opacity-50 text-light rounded-pill px-3"><i class="bi bi-geo-alt me-1"></i> Lokasi</a>
+            <a href="#kontak" class="btn btn-outline-light btn-lg rounded-pill px-4">
+              Hubungi Kami
+            </a>
           </div>
 
         </div>
 
-        <!-- Video YouTube Embed (Ukuran Kecil) -->
+        <!-- Video YouTube Embed -->
         <div class="col-lg-5">
           <div class="mx-auto" style="max-width: 380px;">
             <div class="yt-preview-box rounded-3 overflow-hidden shadow">
@@ -336,46 +426,100 @@
     </div>
   </section>
 
-  <!-- 2. SEJARAH & GAMBARAN UMUM -->
+  <!-- 2. SEJARAH, VISI MISI & FILOSOFI LOGO -->
   <section id="sejarah" class="py-5 bg-light">
     <div class="container py-4">
-      <div class="text-center mb-4">
+      <div class="text-center mb-5">
         <h2 class="fw-bold">Tentang Kami</h2>
-        <p class="text-muted">PT Alkindo Mitraraya</p>
+        <p class="text-muted">Profil, Sejarah, dan Nilai Utama PT Alkindo Mitraraya</p>
       </div>
 
-      <div class="about-story-card">
+      <!-- Kartu Utama Sejarah (Dengan Teks Justify / Rata Kiri-Kanan) -->
+      <div class="about-story-card mb-5">
         <div class="row align-items-center g-4">
           <div class="col-lg-7">
             <span class="badge-story"><i class="bi bi-bookmark-heart me-1"></i> Our Story</span>
             <h3 class="fw-bold fs-2 text-dark mb-3">PT Alkindo Mitraraya: Perjalanan, Inovasi, dan Perkembangan</h3>
-            <p class="text-muted leading-relaxed">
+            <p class="text-muted leading-relaxed text-justify" style="text-align: justify;">
               PT Alkindo Mitraraya merupakan perusahaan yang perjalanan dan perkembangannya mencerminkan upaya dalam mengembangkan industri serta meningkatkan kualitas produksi. Berdasarkan referensi, perusahaan didirikan pada tahun 1989 dengan fokus memproduksi resin sintetis berkualitas tinggi untuk pelapis berbasis pelarut.
             </p>
-            <p class="text-muted leading-relaxed mb-0">
+            <p class="text-muted leading-relaxed mb-0 text-justify" style="text-align: justify;">
               Pada tahun 1993, perusahaan memperluas produksinya dengan menghadirkan resin larutan akrilik, kemudian meningkatkan kapasitas produksi resin alkyd hingga mencapai 5.400 MTPA pada akhir tahun 1995. Perkembangan tersebut menjadi bagian penting dalam perjalanan perusahaan untuk memenuhi kebutuhan pasar dan meningkatkan daya saing manufaktur kimia nasional.
             </p>
           </div>
           <div class="col-lg-5">
             <div class="story-img-frame">
-              <svg width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-3">
-                <circle cx="50" cy="20" r="12" fill="#38bdf8"/>
-                <circle cx="20" cy="80" r="12" fill="#38bdf8"/>
-                <circle cx="80" cy="80" r="12" fill="#38bdf8"/>
-                <line x1="50" y1="20" x2="20" y2="80" stroke="#38bdf8" stroke-width="8"/>
-                <line x1="50" y1="20" x2="80" y2="80" stroke="#38bdf8" stroke-width="8"/>
-                <line x1="20" y1="80" x2="80" y2="80" stroke="#38bdf8" stroke-width="8"/>
+              <!-- Logo Alkindo Resmi -->
+              <svg width="85" height="85" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-3">
+                <circle cx="50" cy="18" r="12" fill="#38bdf8"/>
+                <circle cx="18" cy="78" r="12" fill="#38bdf8"/>
+                <circle cx="82" cy="78" r="12" fill="#38bdf8"/>
+                <line x1="50" y1="18" x2="18" y2="78" stroke="#38bdf8" stroke-width="9"/>
+                <line x1="50" y1="18" x2="82" y2="78" stroke="#38bdf8" stroke-width="9"/>
+                <line x1="18" y1="78" x2="82" y2="78" stroke="#38bdf8" stroke-width="9"/>
+                <line x1="50" y1="18" x2="50" y2="78" stroke="#38bdf8" stroke-width="9"/>
               </svg>
               <h3 class="fw-bold mb-1">alkindo</h3>
-              <p class="small text-light opacity-75">High Performance Industrial Resin</p>
+              <p class="small text-light opacity-75 mb-0">High Performance Industrial Resin</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Visi, Misi & Filosofi Logo Grid -->
+      <div class="row g-4" id="visi-misi-section">
+        <!-- Visi -->
+        <div class="col-md-4">
+          <div class="vm-card h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-primary-subtle text-primary p-3 rounded-circle fs-4">
+                <i class="bi bi-eye-fill"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Visi Kami</h4>
+            </div>
+            <p class="text-muted small mb-0 text-justify" style="text-align: justify;">
+              Menjadi produsen resin sintetis terdepan dan terpercaya di Asia Tenggara yang dikenal atas kualitas, inovasi produk berkelanjutan, serta komitmen terhadap ramah lingkungan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Misi -->
+        <div class="col-md-4">
+          <div class="vm-card h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success-subtle text-success p-3 rounded-circle fs-4">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Misi Kami</h4>
+            </div>
+            <ul class="text-muted small ps-3 mb-0 text-justify" style="text-align: justify;">
+              <li class="mb-2">Menyediakan resin industri standar internasional dengan daya tahan tinggi.</li>
+              <li class="mb-2">Mengembangkan riset formulasi ramah lingkungan (water-based & eco-resin).</li>
+              <li>Memberikan pelayanan dan pengiriman terbaik secara konsisten kepada mitra bisnis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Filosofi Logo -->
+        <div class="col-md-4" id="filosofi-section">
+          <div class="vm-card h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-warning-subtle text-dark p-3 rounded-circle fs-4">
+                <i class="bi bi-diagram-3-fill"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Filosofi Logo</h4>
+            </div>
+            <p class="text-muted small mb-0 text-justify" style="text-align: justify;">
+              Struktur molekul segitiga melambangkan fondasi kimia yang kuat, inovasi riset tak terputus, serta sinergi tiga pilar utama perusahaan: <strong>Kualitas Produk</strong>, <strong>Kepuasan Mitra</strong>, dan <strong>Keberlanjutan Lingkungan</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- 3. KATALOG PRODUK LENGKAP (LOKAL INPUT) -->
+  <!-- 3. KATALOG PRODUK LENGKAP -->
   <section id="katalog" class="py-5">
     <div class="container py-4">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
@@ -403,7 +547,9 @@
               <p class="text-muted small">Bahan baku utama untuk formulasi cat kayu dan cat besi konvensional.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalAlkyd">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -420,7 +566,9 @@
               <p class="text-muted small">Daya tahan cuaca ekstrim serta retensi warna yang sangat kuat.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalAcrylic">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -437,7 +585,9 @@
               <p class="text-muted small">Bahan pengeras (curing agent) untuk aplikasi cat oven industri.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalAmino">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -454,7 +604,9 @@
               <p class="text-muted small">Bahan pelapis komersial industri otomotif dan koil baja.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalPolyester">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -471,7 +623,9 @@
               <p class="text-muted small">Pelapis lantai (floor coating) &amp; cat anti-korosi industri heavy duty.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Solvent-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalEpoxy">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -488,7 +642,9 @@
               <p class="text-muted small">Formulasi ramah lingkungan berbasis air untuk pelapis berperforma tinggi.</p>
               <div class="border-top pt-3 d-flex justify-content-between align-items-center">
                 <span class="badge bg-info-subtle text-info px-3 py-2 rounded-pill">Water-Based</span>
-                <a href="#kontak" class="btn btn-sm btn-outline-primary rounded-pill px-3">Detail <i class="bi bi-arrow-right"></i></a>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalWaterPU">
+                  Detail <i class="bi bi-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -515,11 +671,7 @@
             </div>
             <h5 class="fw-bold mb-1 text-dark">Direktur Utama</h5>
             <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-1 rounded-pill">Presiden Direktur</span>
-            <p class="text-muted small mb-3">Memimpin ekspansi pasar, riset formulasi resin, dan arah strategis perusahaan.</p>
-            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
-            </div>
+            <p class="text-muted small mb-0">Memimpin ekspansi pasar, riset formulasi resin, dan arah strategis perusahaan.</p>
           </div>
         </div>
 
@@ -530,11 +682,7 @@
             </div>
             <h5 class="fw-bold mb-1 text-dark">Punggawa Keberlanjutan</h5>
             <span class="badge bg-success-subtle text-success mb-3 px-3 py-1 rounded-pill">Chief Executive Officer</span>
-            <p class="text-muted small mb-3">Penanggung jawab utama Green Chemistry, keselamatan K3L, serta program CSR.</p>
-            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
-            </div>
+            <p class="text-muted small mb-0">Penanggung jawab utama Green Chemistry, keselamatan K3L, serta program CSR.</p>
           </div>
         </div>
 
@@ -545,11 +693,7 @@
             </div>
             <h5 class="fw-bold mb-1 text-dark">Manajer Produksi</h5>
             <span class="badge bg-secondary-subtle text-secondary mb-3 px-3 py-1 rounded-pill">Operation Manager</span>
-            <p class="text-muted small mb-3">Mengelola standarisasi mutu resin, pengujian laboratorium, dan pabrikasi.</p>
-            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
-            </div>
+            <p class="text-muted small mb-0">Mengelola standarisasi mutu resin, pengujian laboratorium, dan pabrikasi.</p>
           </div>
         </div>
 
@@ -560,11 +704,7 @@
             </div>
             <h5 class="fw-bold mb-1 text-dark">Manajer Keuangan</h5>
             <span class="badge bg-secondary-subtle text-secondary mb-3 px-3 py-1 rounded-pill">Finance &amp; GA</span>
-            <p class="text-muted small mb-3">Mengatur tata kelola keuangan, kepatuhan regulasi, dan administrasi umum.</p>
-            <div class="d-flex justify-content-center gap-2 pt-2 border-top">
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-muted rounded-circle"><i class="bi bi-envelope"></i></a>
-            </div>
+            <p class="text-muted small mb-0">Mengatur tata kelola keuangan, kepatuhan regulasi, dan administrasi umum.</p>
           </div>
         </div>
       </div>
@@ -579,8 +719,8 @@
           <span class="text-primary fw-bold">KANTOR &amp; PABRIK</span>
           <h2 class="fw-bold mb-3">Lokasi Operasional</h2>
           <p class="text-muted"><i class="bi bi-geo-alt-fill text-primary me-2"></i>PT. Alkindo Mitra Raya, Kabupaten Tangerang, Banten</p>
-          <p class="text-muted"><i class="bi bi-telephone-fill text-primary me-2"></i>+62 21 555-1234</p>
-          <p class="text-muted"><i class="bi bi-envelope-fill text-primary me-2"></i>info@alkindomitraraya.co.id</p>
+          <p class="text-muted"><a href="tel:+62215551234" class="text-decoration-none text-muted"><i class="bi bi-telephone-fill text-primary me-2"></i>+62 21 555-1234</a></p>
+          <p class="text-muted"><a href="mailto:info@alkindomitraraya.co.id" class="text-decoration-none text-muted"><i class="bi bi-envelope-fill text-primary me-2"></i>info@alkindomitraraya.co.id</a></p>
         </div>
         <div class="col-lg-7">
           <div class="rounded-4 overflow-hidden border shadow-sm" style="height: 350px;">
@@ -599,7 +739,7 @@
     </div>
   </section>
 
-  <!-- 6. Formulir Kontak -->
+  <!-- 6. Formulir Kontak TERHUBUNG LGSG KE EMAIL (FORMSPREE ID: xwllzqby) -->
   <section id="kontak" class="py-5 bg-light">
     <div class="container py-4">
       <div class="text-center mb-4">
@@ -608,20 +748,22 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
-          <form class="p-4 border rounded-4 bg-white shadow-sm">
+          <form action="https://formspree.io/f/xwllzqby" method="POST" class="p-4 border rounded-4 bg-white shadow-sm">
             <div class="mb-3">
               <label class="form-label fw-medium">Nama Lengkap</label>
-              <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+              <input type="text" name="name" class="form-control" placeholder="Masukkan nama Anda" required>
             </div>
             <div class="mb-3">
               <label class="form-label fw-medium">Email Perusahaan</label>
-              <input type="email" class="form-control" placeholder="nama@perusahaan.com">
+              <input type="email" name="email" class="form-control" placeholder="nama@perusahaan.com" required>
             </div>
             <div class="mb-3">
-              <label class="form-label fw-medium">Pesan</label>
-              <textarea class="form-control" rows="4" placeholder="Tuliskan detail kebutuhan Anda..."></textarea>
+              <label class="form-label fw-medium">Pesan / Detail Kebutuhan</label>
+              <textarea name="message" class="form-control" rows="4" placeholder="Tuliskan detail kebutuhan Anda..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">Kirim Pesan</button>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">
+              <i class="bi bi-envelope-paper-fill me-2"></i>Kirim Pesan ke Email
+            </button>
           </form>
         </div>
       </div>
@@ -629,21 +771,445 @@
   </section>
 
   <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/6285604501550" target="_blank" class="whatsapp-btn">
+  <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20informasi%20layanan%20dan%20produk%20resin." target="_blank" class="whatsapp-btn">
     <i class="bi bi-whatsapp fs-4"></i> Chat WhatsApp
   </a>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p class="small text-secondary mb-0">Copyright © 2026 PT Alkindo Mitraraya. All Rights Reserved.</p>
+  <!-- FOOTER LENGKAP -->
+  <footer class="mt-auto">
+    <!-- Konten Utama Footer -->
+    <div class="footer-main-content">
+      <div class="container">
+        <div class="row g-4">
+          
+          <div class="col-6 col-md-3">
+            <h6>CORPORATE</h6>
+            <ul class="footer-links">
+              <li><a href="#sejarah">About Us</a></li>
+              <li><a href="#visi-misi-section">Visi &amp; Misi</a></li>
+              <li><a href="#filosofi-section">Filosofi Logo</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h6>PRODUK RESIN</h6>
+            <ul class="footer-links">
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalAlkyd">Alkyd Resin</button></li>
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalAcrylic">Acrylic Solution Resin</button></li>
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalAmino">Amino Curing Agent</button></li>
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalPolyester">Polyester Resin</button></li>
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalEpoxy">Epoxy Resin</button></li>
+              <li><button type="button" data-bs-toggle="modal" data-bs-target="#modalWaterPU">Water-Based Polyurethane</button></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h6>INFORMASI &amp; LAYANAN</h6>
+            <ul class="footer-links">
+              <li><a href="#katalog">Katalog Produk</a></li>
+              <li><a href="#manajemen">Manajemen</a></li>
+              <li><a href="#lokasi">Pabrik &amp; Kantor</a></li>
+              <li><a href="#kontak">Hubungi Kami</a></li>
+            </ul>
+          </div>
+
+          <!-- Help Center Widget Box (Direct WhatsApp Klik) -->
+          <div class="col-12 col-md-3">
+            <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20menghubungi%20via%20Help%20Center%20Website." target="_blank" class="footer-help-box">
+              <h6 class="text-white mb-2" style="font-size: 0.8rem;">HUBUNGI KAMI</h6>
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <i class="bi bi-telephone-fill fs-3"></i>
+                <div>
+                  <h5 class="mb-0">0856 0450 1550</h5>
+                  <p>Jam Kerja: Senin - Jumat</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 pt-2 border-top border-white border-opacity-25">
+                <i class="bi bi-envelope-fill fs-6"></i>
+          
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright & Legal Bar -->
+    <div class="footer-bottom-bar text-center">
+      <div class="container">
+        <p class="mb-0">Copyright © 2026 PT Alkindo Mitraraya. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- ==================== MODAL POP-UP SPESIFIKASI PRODUK ==================== -->
+
+  <!-- Modal 1: Resin Alkid -->
+  <div class="modal fade" id="modalAlkyd" tabindex="-1" aria-labelledby="modalAlkydLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-primary text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalAlkydLabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Resin Alkid (Alkyd Resin)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/resin alkyd.jpeg" alt="Resin Alkid" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mt-3">Solvent-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Resin Alkid sintetis berperforma tinggi sebagai bahan baku utama pembuatan enamel sintetis, pernis kayu, dan pelapis anti-karat besi.</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Long / Medium Oil Alkyd</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>60% ± 2%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Viskositas (25°C)</th>
+                    <td>Z1 - Z4 (Gardner-Holdt)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solvent / Pelarut</th>
+                    <td>White Spirit / Xylene</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Nilai Asam (Acid Value)</th>
+                    <td>Max. 10 mg KOH/g</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Cat Kayu, Cat Besi, Primer Anti-Karat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Resin%20Alkid%20(Alkyd%20Resin)." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Resin Akrilik Larutan -->
+  <div class="modal fade" id="modalAcrylic" tabindex="-1" aria-labelledby="modalAcrylicLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-primary text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalAcrylicLabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Resin Akrilik Larutan</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/resin akrilik.jpeg" alt="Resin Akrilik Larutan" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mt-3">Solvent-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Resin akrilik larutan berbasis pelarut dengan daya tahan sinar UV super tinggi, pengeringan cepat, dan retensi kilap yang optimal.</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Thermoplastic / Thermosetting Acrylic</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>50% ± 2%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Viskositas (25°C)</th>
+                    <td>U - Z (Gardner-Holdt)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solvent / Pelarut</th>
+                    <td>Toluene / Butyl Acetate</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Daya Tahan Cuaca</th>
+                    <td>Sangat Tinggi (Anti Yellowing)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Cat Otomotif (Clear Coat), Marka Jalan, Cat Plastik</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Resin%20Akrilik%20Larutan." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Resin Amino -->
+  <div class="modal fade" id="modalAmino" tabindex="-1" aria-labelledby="modalAminoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-primary text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalAminoLabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Resin Amino (Amino Resin)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/resin amino.jpeg" alt="Resin Amino" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mt-3">Solvent-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Curing agent atau pengeras lintas rantai (crosslinking agent) berkinerja tinggi untuk sistem cat pemanggangan oven (baking enamel).</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Isobutylated Melamine / Urea Formaldehyde</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>60% - 70%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Suhu Oven (Stoving)</th>
+                    <td>120°C - 150°C</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Kekerasan Film</th>
+                    <td>H - 3H (Pencil Hardness)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solvent / Pelarut</th>
+                    <td>Isobutanol / Xylene</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Stoving Enamel Industri, Pelapis Drum, Kaleng &amp; Traktor</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Resin%20Amino%20(Amino%20Resin)." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Resin Poliester -->
+  <div class="modal fade" id="modalPolyester" tabindex="-1" aria-labelledby="modalPolyesterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-primary text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalPolyesterLabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Resin Poliester</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/resin poliester.jpeg" alt="Resin Poliester" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mt-3">Solvent-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Resin poliester jenuh dengan fleksibilitas tinggi dan daya rekat kuat untuk pelapis industri otomotif serta pengolahan lembaran seng/koil baja.</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Saturated Polyester Resin</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>65% ± 2%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Fleksibilitas (T-Bend)</th>
+                    <td>0T - 1T (Sangat Elastis)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solvent / Pelarut</th>
+                    <td>Solvesso 100 / PMA</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Nilai Hydroxyl</th>
+                    <td>30 - 50 mg KOH/g</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Coil Coating (Atap Seng/Metal), Cat Otomotif Primer</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Resin%20Poliester." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Resin Epoksi -->
+  <div class="modal fade" id="modalEpoxy" tabindex="-1" aria-labelledby="modalEpoxyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-primary text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalEpoxyLabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Resin Epoksi (Epoxy Resin)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/resin epoxy.jpeg" alt="Resin Epoksi" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mt-3">Solvent-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Resin epoksi heavy-duty dengan daya tahan luar biasa terhadap zat kimia keras, gesekan mekanis, serta pencegahan korosi tingkat tinggi.</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Liquid / Solid Epoxy (Bisphenol A)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Epoxy Equivalent Wt</th>
+                    <td>450 - 500 g/eq</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>75% - 100%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Ketahanan Kimia</th>
+                    <td>Sangat Baik (Asam, Basa, Pelarut)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Pengeras Pasangan</th>
+                    <td>Poliamida / Poliamina (Hardener)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Epoxy Floor Coating, Cat Kapal (Marine Coating), Tangki Kimia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Resin%20Epoksi%20(Epoxy)." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Poliuretan Berbasis Air -->
+  <div class="modal fade" id="modalWaterPU" tabindex="-1" aria-labelledby="modalWaterPULabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-info text-white rounded-top-4">
+          <h5 class="modal-title fw-bold" id="modalWaterPULabel"><i class="bi bi-box-seam me-2"></i>Spesifikasi - Poliuretan Berbasis Air (Waterborne PU)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4 border">
+                <img src="assets/img/ai" alt="Poliuretan Berbasis Air" class="img-fluid rounded" style="max-height: 220px; object-fit: contain;">
+              </div>
+              <span class="badge bg-info-subtle text-info px-3 py-2 rounded-pill mt-3">Water-Based</span>
+            </div>
+            <div class="col-md-7">
+              <p class="text-muted small">Inovasi resin poliuretan ramah lingkungan berbahan dasar air (VOC sangat rendah, bebas bau menyengat) tanpa mengurangi performa ketahanan gores.</p>
+              
+              <table class="table table-bordered table-sm small">
+                <tbody>
+                  <tr>
+                    <th class="bg-light w-40">Tipe Resin</th>
+                    <td>Waterborne Polyurethane Dispersion (PUD)</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Solid Content</th>
+                    <td>35% - 40%</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Kandungan VOC</th>
+                    <td>Sangat Rendah (&lt; 50 g/L) Eco-Friendly</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">pH (25°C)</th>
+                    <td>7.5 - 8.5</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Viskositas</th>
+                    <td>50 - 300 mPa.s</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Aplikasi Utama</th>
+                    <td>Pernis Kayu Ramah Lingkungan, Finishing Kulit &amp; Tekstil, Cat Arsitektural</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light rounded-bottom-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://wa.me/6285604501550?text=Halo%20PT%20Alkindo%20Mitraraya,%20saya%20ingin%20bertanya%20mengenai%20spesifikasi%20dan%20penawaran%20harga%20untuk%20Poliuretan%20Berbasis%20Air." target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
+    // Filter Katalog Produk
     function filterProd(cat) {
       const buttons = document.querySelectorAll('.btn-group .btn');
       buttons.forEach(btn => btn.classList.remove('active'));
